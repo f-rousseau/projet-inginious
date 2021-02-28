@@ -19,3 +19,19 @@ Equation : sorted, a = 0
 
 
 avec a != 0 ou b != 0
+
+
+Vous devez implémenter une fonction *addClient* qui ajoutera dans le dictionnaire le client avec pour clé son nom et comme valeur un dictionnaire contenant son numéro, sa rue et sa ville. Ces valeurs seront stockées dans le dictionnaire avec chaque valeur sa clé associée.
+
+Voici un exemple
+
+.. code-block:: python
+
+    {
+        clientName: {"number": clientNumber, "street": clientStreet, "ville": clientCity}
+    }
+
+
+Le numéro du client sera fourni et stocké sous forme d'*int*, la rue sous forme de *str* et la ville sous forme de *str*.
+
+La fonction retournera *True* si le client a bien été ajouté et *False* si la clé du nom du client était déjà présente dans le dictionnaire.
