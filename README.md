@@ -2,7 +2,7 @@
 
 GitHub for the Inginious project for the LINFO1002 course
 
-Students :
+###Students :
 
 Jérémy Hallart
 Rousseau Florent
