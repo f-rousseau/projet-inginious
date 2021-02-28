@@ -4,8 +4,11 @@ def secondDegree(a, b, c):
     delta = b ** 2 - (4 * a * c)
     if delta < 0:
         return None
+    elif delta == 0:
+        return [-b/2*a]
     froot = (-b + delta ** (1 / 2)) / (2 * a)
     sroot = (-b + delta ** (1 / 2)) / (2 * a)
     return sorted((froot, sroot))
 
-print(secondDegree(0, 0, 1))
+
+print(secondDegree(1, 0, 0))
