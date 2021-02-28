@@ -9,4 +9,4 @@ def secondDegree(a, b, c):
     return sorted(sol)
 
 
-print(secondDegree(0, 0, 1))
+
