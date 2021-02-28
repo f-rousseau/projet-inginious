@@ -1,0 +1,21 @@
+Q1: Vous devez implémenter un classe Vehicle qui comportera les attributs suivants : id, brand, hasMotor, hasBody et seats.
+Ces atrributs seront respectivment de type int, str, bool, bool et int.
+
+L'id de chaque véhicule sera unique et défini automatiquement. Le premier véhicule aura pour id 0.
+
+Vous devrez également implémenter la fonction __str__ de cette classe, de telle sorte que lorqu'on appelle la fonction print(Vehicle)
+le résultat soit sous cette forme :
+"""
+Id : *int*
+Brand : *brand*
+Has a motor : *bool*
+Has a body : *bool*
+Seats : *int*
+"""
+
+
+
+Equation : sorted, a = 0
+
+
+avec a != 0 ou b != 0
