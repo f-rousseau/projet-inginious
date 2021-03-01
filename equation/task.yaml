@@ -1,0 +1,49 @@
+accessible: true
+author: Florent Rousseau, Jérémy Hallaert
+categories:
+- Math
+contact_url: mailto:florent.rousseau@student.uclouvain.be?cc=jeremy.hallaert@student.uclouvain.be&?subject=Inginious%20%3A%20P1_2B_4
+context: ''
+environment_id: pyjavacpp
+environment_parameters:
+    limits:
+        memory: '100'
+        time: '30'
+        hard_time: ''
+    run_cmd: ''
+environment_type: docker
+evaluate: best
+file: ''
+groups: false
+input_random: '0'
+name: Une p'tite équation
+network_grading: false
+problems:
+    q1:
+        name: ''
+        header: |-
+            Vous devez implémenter une fonction *secondDegree* prenant pour paramètres *a, b* et *c* représentants :
+
+            :math:`a*x^2 + b*x + c = 0`
+
+            avec
+
+            :math:`a\neq0` ou :math:`b\neq0`
+
+            Cette fontion sera capable de résoudre des équations du second degré dans R (ensemble des réels).
+            La fonction retournera une liste **ordonnée** des solutions de l'équation. Si les solutions de l'équation sont irréelles la fonction retournera *None*.
+
+            .. warning::
+               Sans utiliser d'import (ni math ni numpy, etc.)
+
+            Implémentez votre fonction ici :
+        type: code
+        default: |-
+            def secondDegree(a, b, c):
+                return None
+        language: python
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+weight: 1.0

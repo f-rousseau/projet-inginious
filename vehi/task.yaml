@@ -1,0 +1,54 @@
+accessible: true
+author: Florent Rousseau, Jérémy Hallaert
+categories:
+- Classe
+contact_url: mailto:florent.rousseau@student.uclouvain.be?cc=jeremy.hallaert@student.uclouvain.be&?subject=Inginious%20%3A%20P1_2B_4
+context: ''
+environment_id: pyjavacpp
+environment_parameters:
+    limits:
+        memory: '100'
+        time: '30'
+        hard_time: ''
+    run_cmd: ''
+environment_type: docker
+evaluate: best
+file: ''
+groups: false
+input_random: '0'
+name: Une p'tite voiture
+network_grading: false
+problems:
+    Implementation:
+        language: python
+        type: code
+        header: |-
+            Vous devez implémenter une classe Vehicle qui comportera les attributs suivants : id, brand, hasMotor, hasBody et seats.
+            Ces atrributs seront respectivment de type int, str, bool, bool et int.
+
+            L'id de chaque véhicule sera unique et défini automatiquement. Le premier véhicule aura pour id 0.
+
+            Vous devrez également implémenter la fonction __str__ de cette classe, de telle sorte que lorqu'on appelle la fonction print(Vehicle)
+            le résultat soit sous cette forme :
+
+            .. code-block:: python
+
+                Id : *int*
+                Brand : *brand*
+                Has a motor : *bool*
+                Has a body : *bool*
+                Seats : *int*
+        default: |-
+            class Vehicle():
+
+                def __init__(self, brand: str, hasMotor: bool, hasBody: bool, seats: int):
+                    pass
+
+                def __str__(self):
+                    return None
+        name: ''
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+weight: 1.0

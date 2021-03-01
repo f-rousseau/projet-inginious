@@ -1,0 +1,101 @@
+accessible: true
+author: Florent Rousseau, Jérémy Hallaert
+categories: []
+contact_url: mailto:florent.rousseau@student.uclouvain.be?cc=jeremy.hallaert@student.uclouvain.be&?subject=Inginious%20%3A%20P1_2B_4
+context: |
+    Vous devez implémenter une série de fonction utiles pour un logiciel d'une société. Cette société a des clients qui ont chacun un nom et une adresse associée.
+
+    Pour simplifier cette tâche, on considèrera que tous les clients ont un nom différent.
+
+    Les informations des clients sont stockées sous forme de dictionnaire comme celui ci-dessous.
+
+    .. code-block:: python
+
+        clients = {
+            "Hallaert": {
+                "city": "Louvain-la-Neuve",
+                "number": 23,
+                "street": "Rue des Bruyères"
+            },
+            "Rousseau": {
+                "city": "Louvain-la-Neuve",
+                "number": 18,
+                "street": "Rue Constantin Meunier"
+            }
+environment_id: pyjavacpp
+environment_parameters:
+    limits:
+        memory: '100'
+        time: '30'
+        hard_time: ''
+    run_cmd: ''
+environment_type: docker
+evaluate: best
+file: ''
+groups: false
+input_random: '0'
+name: Un p'tit client
+network_grading: false
+problems:
+    q1:
+        name: ''
+        header: |-
+            .. note::
+                :title: Fonction findClientByName
+
+                Vous devez implémenter une fonction *findClientByName* qui trouvera dans le dictionnaire de clients le client rehcerché par son nom.
+
+                Le nom du client (*clientName*) sous forme de *str* et le dictionnaire de clients (*clientsDict*) sous forme de *dict* seront renseignés en paramètres de la fonction nommée *findClientByName*.
+
+                La fonction retournera l'objet *dict* renseignant les informations du client. Si aucun client n'est associé à ce nom la fonction retournera *None*.
+
+            .. note::
+                :title: Fonction addClient
+
+                Vous devez implémenter une fonction *addClient* qui ajoutera dans le dictionnaire le client avec pour clé son nom et comme valeur un dictionnaire contenant son numéro, sa rue et sa ville. Ces valeurs seront stockées dans le dictionnaire avec chaque valeur sa clé associée.
+
+                Voici un exemple:
+
+                .. code-block:: python
+
+                    {
+                        clientName: {"number": clientNumber, "street": clientStreet, "ville": clientCity}
+                    }
+
+
+                Le numéro du client sera fourni et stocké sous forme d'*int*, la rue sous forme de *str* et la ville sous forme de *str*.
+
+                La fonction retournera *True* si le client a bien été ajouté et *False* si la clé du nom du client était déjà présente dans le dictionnaire.
+
+                .. tip::
+                    :title: P'tit tip
+
+                    Utilisez votre fonction findClientByName ;)
+
+            .. note::
+                :title: Fonction removeClient
+
+                Vous devez implémenter une fonction *removeClient* qui retirera dans le dictionnaire le client avec la clé correspondante.
+
+                La fonction retournera *True* si le client a bien été retiré et *False* si la clé du nom du client n'était pas présente dans le dictionnaire.
+
+                .. tip::
+                    :title: P'tit tip
+
+                    Utilisez votre fonction findClientByName ;)
+        type: code
+        default: |-
+            def findClientByName(clientsDict: dict, clientName: str):
+                return None
+
+            def addClient(clientsDic: dict, clientName: str, clientNumber: int, clientStreet: str, clientCity: str):
+                return False
+
+            def removeClient(clientsDic: dict, clientName: str):
+                return False
+        language: python
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+weight: 1.0
